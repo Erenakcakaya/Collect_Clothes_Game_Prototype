@@ -19,7 +19,7 @@ public class ClothesController : MonoBehaviour
     {
         if (other.gameObject.tag == "Trigger")
         {
-            //Child'lar sürekli değiştiği için değişkenleri start'ta alamadım.
+            //Child'lar sürekli değiştiği için değişkenleri start'ta almak yerine burada aldım.
             int amount = GameObject.FindGameObjectWithTag("Trigger").GetComponent<ShelfParent>().clothesIndex;
             if (GameObject.FindGameObjectWithTag("ShelfBox").transform.GetChild(GameObject.FindGameObjectWithTag("Trigger").GetComponent<ShelfParent>().count) != null)
             {
